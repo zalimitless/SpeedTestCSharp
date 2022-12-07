@@ -3,11 +3,15 @@ using static DataCapture.SpeedTestClass;
 using static DataCapture.FileOperations;
 using DataCapture;
 
-string fileDirectory = Environment.GetCommandLineArgs()[1];
 
-if(!String.IsNullOrEmpty(fileDirectory))
+if (Environment.GetCommandLineArgs().Length > 1)
 {
-    FileOperations.directory = fileDirectory;
+    string fileDirectory = Environment.GetCommandLineArgs()[1];
+
+    if(!String.IsNullOrEmpty(fileDirectory))
+    {
+        FileOperations.directory = fileDirectory;
+    }
 }
 
 var Done = false;
