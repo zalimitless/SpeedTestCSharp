@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "u1bA2ZNUVMC1jG0xH2F7tyQUIYMBn7kGZrY8YsRg2ZktOAfz3WQ6v/iZODBHr5f3lRK6LC5+4OgQLkMD3zGUvg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jvdla\\source\\repos\\VisualizeSpeedData\\DataCapture\\DataCapture\\DataCapture.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jvdla\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\jvdla\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\jvdla\\.nuget\\packages\\system.configuration.configurationmanager\\7.0.0\\system.configuration.configurationmanager.7.0.0.nupkg.sha512",
+    "C:\\Users\\jvdla\\.nuget\\packages\\system.diagnostics.performancecounter\\7.0.0\\system.diagnostics.performancecounter.7.0.0.nupkg.sha512",
+    "C:\\Users\\jvdla\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",
+    "C:\\Users\\jvdla\\.nuget\\packages\\system.security.cryptography.protecteddata\\7.0.0\\system.security.cryptography.protecteddata.7.0.0.nupkg.sha512",
+    "C:\\Users\\jvdla\\.nuget\\packages\\system.security.permissions\\7.0.0\\system.security.permissions.7.0.0.nupkg.sha512",
+    "C:\\Users\\jvdla\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
