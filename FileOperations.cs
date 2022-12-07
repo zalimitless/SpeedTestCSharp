@@ -13,7 +13,7 @@ namespace DataCapture
 
         public static void WriteToFile(string topic, string value)
         {
-            string fileName = (directory.Length > 0 ? directory : Directory.GetCurrentDirectory()) + "\\" + GetFileName(topic);
+            string fileName = (directory.Length > 0 ? directory : Directory.GetCurrentDirectory()) + "/" + GetFileName(topic);
 
             string output = Convert.ToString(TODAY.ToUnixTimeMilliseconds()) + ";" + value;
 
