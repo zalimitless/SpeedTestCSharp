@@ -14,13 +14,14 @@ namespace DataCapture
         public static void WriteToFile(string topic, string value)
         {
             string fileName = (directory.Length > 0 ? directory : Directory.GetCurrentDirectory()) + "/" + GetFileName(topic);
+            string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
             string output = Convert.ToString(TODAY.ToUnixTimeMilliseconds()) + ";" + value;
 
             if (!File.Exists(fileName))
             {
                 Console.WriteLine("Creating New File: " + fileName);
-                using (StreamWriter sw = File.AppendText(fileName))
+                using (StreamWriter sw = new StreamWriter(Path.Combine(docPath, fileName)))
                 {
                     sw.WriteLine("Time;Value");
                     sw.WriteLine(output);
