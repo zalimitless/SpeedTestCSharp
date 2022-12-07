@@ -21,7 +21,7 @@ namespace DataCapture
             if (!File.Exists(fileName))
             {
                 Console.WriteLine("Creating New File: " + fileName);
-                using (StreamWriter sw = new StreamWriter(Path.Combine(docPath, fileName)))
+                using (StreamWriter sw = new StreamWriter(Path.Combine(docPath, fileName), true))
                 {
                     sw.WriteLine("Time;Value");
                     sw.WriteLine(output);
