@@ -16,7 +16,7 @@ namespace DataCapture
             string fileName = (directory.Length > 0 ? directory : Directory.GetCurrentDirectory()) + "/" + GetFileName(topic);
             string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
-            DateTimeOffset date = new DateTimeOffset();
+            DateTimeOffset date = DateTimeOffset.Now;
             string output = Convert.ToString(date.ToUnixTimeMilliseconds()) + ";" + value;
 
             if (!File.Exists(fileName))
