@@ -2,7 +2,8 @@
 using static DataCapture.SpeedTestClass;
 using static DataCapture.FileOperations;
 using DataCapture;
-
+using SpeedTest.Net.Models;
+using SpeedTest.Net;
 
 if (Environment.GetCommandLineArgs().Length > 1)
 {
@@ -15,12 +16,13 @@ if (Environment.GetCommandLineArgs().Length > 1)
 }
 
 var Done = false;
-Task pingTask = new(() =>
+Task pingTask = new(async () =>
 {
     Console.WriteLine("Starting Ping Tests");
-    while(!Done)
+    Server server = await SpeedTestClient.GetServer();
+    while (!Done)
     {
-        long result = PingTest("8.8.8.8");
+        long result = PingTest(server.Host.Replace(":8080", ""));
         WriteToFile("Ping", result);
 
         DateTime d = DateTime.Now.ToLocalTime();
